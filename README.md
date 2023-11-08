@@ -15,8 +15,8 @@ The application will start running at http://localhost:3000.
 
 # API Endpoints
 
-* Local Base URL: http://localhost:3000/api
-* Deployed Base URL: https://brew-apps-nt00.onrender.com/api
+* Local Base URL: http://localhost:3000/
+* Deployed Base URL: https://brew-apps-nt00.onrender.com/
 
 - **POST /add-new-book**
   - Adds a new book to the database.
