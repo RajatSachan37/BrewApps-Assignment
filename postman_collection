@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "1826f335-0fd5-4846-8c40-802e91c31032",
+		"name": "BrewApps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add a new book (title, author, summary)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"book2\",\r\n    \"author\": \"author2\",\r\n    \"summary\": \"summary2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/add-new-book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"add-new-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View a list of all books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/view-all-books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"view-all-books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View details of a specific book by its ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/view-book/654a5eb6e9057162644784e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"view-book",
+						"654a5eb6e9057162644784e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a book's details",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\":\"author1\",\r\n    \"summary\": \"summary1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/update-book/654a5eb6e9057162644784e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"update-book",
+						"654a5eb6e9057162644784e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/delete-book/654a5eb6e9057162644784e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"delete-book",
+						"654a5eb6e9057162644784e0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
