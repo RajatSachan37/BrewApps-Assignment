@@ -5,7 +5,7 @@ This repository contains a Node.js application for managing books. The applicati
 ## Installation
 
 ```sh
-git clone https://github.com/username/brewapps-assignment.git
+git clone https://github.com/RajatSachan37/BrewApps-Assignment.git
 cd brewapps-assignment
 npm install
 node app.js
